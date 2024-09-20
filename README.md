@@ -130,7 +130,7 @@ You can adjust these values in the scripts as needed.
 
 ### Tolerance Setting in teleport-usdc-to-native.js
 
-The `teleport-usdc-to-native.js` script includes a tolerance setting to account for small discrepancies in balance changes due to floating-point precision.:
+The `teleport-usdc-to-native.js` script includes a tolerance setting to account for small discrepancies in balance changes due to floating-point precision:
 
 ```javascript
 const tolerance = 0.01; // 1% test tolerance
@@ -138,7 +138,7 @@ const tolerance = 0.01; // 1% test tolerance
 
 This tolerance is used when verifying the success of the transaction. The script checks if the actual balance change is within 1% of the expected change. This allows for small variations that might occur due to:
 
-1. Rounding errors in floating-point calculations
+1. Floating-point calculations between 6 (USDC) and 18 (USDC Native) decimal places
 
 You can adjust this tolerance value if needed, depending on the precision required for your specific use case. A lower tolerance (e.g., 0.001 for 0.1%) will make the test more strict, while a higher tolerance will allow for larger discrepancies.
 
