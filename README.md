@@ -157,6 +157,6 @@ Keep your private key secure and never commit it to version control. Use environ
 
 This project was developed by [Chris Fusillo](https://x.com/chrisfusillo), founder of XKOVA, to facilitate token teleportation between USDC on the C-Chain and native tokens on the XKOVA blockchain.
 
-XKOVA is decentralized wireless blockchain infrastructure combined with a payment platform and powered by an Avalanche L1. Designed to empower people with blockchain access and personal finance management - no internet access required.
+XKOVA is a payment platform and decentralized wireless blockchain infrastructure powered by an Avalanche L1 using bridged USDC as its native token. Designed to empower people with blockchain access and personal finance management - no internet access required.
 
 For more information, visit [xkova.com](https://xkova.com).
