@@ -1,4 +1,4 @@
-# ICTT Teleporter USDC-Native Bridge
+# ICTT Teleporter ERC20-Native Bridge
 
 This project contains scripts to facilitate the teleportation of tokens between USDC on the C-Chain and native tokens on an Avalanche L1 blockchain.
 
@@ -6,6 +6,8 @@ This project contains scripts to facilitate the teleportation of tokens between 
 
 1. `teleport-native-to-usdc.js`: Teleports native tokens from an Avalanche L1 blockchain to USDC on the C-Chain.
 2. `teleport-usdc-to-native.js`: Teleports USDC from the C-Chain to native tokens on an Avalanche L1 blockchain.
+3. `teleport-native-to-btcb.js`: Teleports native tokens from an Avalanche L1 blockchain to BTC.b on the C-Chain.
+4. `teleport-btcb-to-native.js`: Teleports BTC from the C-Chain to native tokens on an Avalanche L1 blockchain.
 
 The contracts these scripts interact with can be found in the [avalanche-interchain-token-transfer repository](https://github.com/ava-labs/avalanche-interchain-token-transfer). For convenience, you can directly access the following contracts:
 
@@ -95,9 +97,17 @@ In the `teleport-native-to-usdc.js` script, the balance change calculation inclu
 
 ```javascript
 if (nativeBalanceChange < 0) {
-  console.log(chalk.green(`${timestamp()} Native balance change successful: ${nativeBalanceChange} tokens (inclusive of gas spent)`));
+  console.log(
+    chalk.green(
+      `${timestamp()} Native balance change successful: ${nativeBalanceChange} tokens (inclusive of gas spent)`
+    )
+  );
 } else {
-  console.log(chalk.red(`${timestamp()} Native balance change failed: ${nativeBalanceChange} tokens`));
+  console.log(
+    chalk.red(
+      `${timestamp()} Native balance change failed: ${nativeBalanceChange} tokens`
+    )
+  );
 }
 ```
 
